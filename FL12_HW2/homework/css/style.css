@@ -1,0 +1,173 @@
+/*
+
+write your code here
+
+
+
+*/
+.tm-sidebar {
+    box-shadow: 0px 0px 30px #0000006b;;
+}
+
+.tm-content-box {
+    box-shadow: 0px 0px 30px #0000006b;
+}
+.tm-content-header{
+    background: linear-gradient(90deg, lightskyblue,burlywood );
+}
+
+/*.tm-main-content::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-top: 30px solid rgb(28, 153, 255);*/
+/*    border-right: 110px solid transparent;*/
+/*}*/
+
+.tm-nav-item-link:hover {
+    color: #666;
+    text-decoration: none;
+    background: lightskyblue;
+}
+
+.tm-banner-text{
+    text-shadow: 3px 2px 2px #333;
+}
+
+.tm-banner-inner{
+    background: white;
+}
+
+.tm-main-content > section > .flex-2-col > .tm-team-description-container p {
+    text-indent: 26px;
+    line-height: 35px;
+}
+
+.flex-2-col::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    height: 0;
+    border-top: 30px solid lightskyblue;
+    border-right: 110px solid transparent;
+}
+
+.tm-content-box:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 0;
+    border-top: 30px solid lightskyblue;
+    border-right: 30px solid transparent;
+}
+
+.flex-2-col {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.flex-2-col .tm-team-description-container h2.tm-section-title {
+    color: #15dbdb;
+}
+
+.tm-team-description-container {
+    font-style: normal;
+}
+
+
+.tm-team-description-container p:first-of-type {
+    text-indent: 2.5rem;
+}
+.tm-team-description-container p:nth-of-type(2n){
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+    text-indent: 2.5rem;
+}
+
+.box-bg:hover {
+    background: #87CEFA;
+    color: white;
+    transition: 3s;
+}
+
+.box-bg h2:hover {
+    color: white;
+    transition: 3s;
+}
+
+.blocks > .tm-content-box > .gallery-container > .box:nth-child(even) {
+    background-color: #87cefa;
+}
+
+.blocks > .tm-content-box > .gallery-container > .box:nth-child(even) {
+    font-style: italic;
+}
+
+.section.heading.tm-content-box a {
+    color: white;
+}
+
+.contact-form input:focus{
+    background-color: lightskyblue;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid lightskyblue;
+    border-right: 30px solid transparent;
+}
+
+.heading{
+    position: relative;
+}
+.heading ol{
+    list-style: lower-alpha;
+}
+.heading li:hover{
+    content: ">";
+}
+
+.heading ol li a:hover {
+    content: "";
+    color: #15dbdb;
+    border-bottom: 1px solid #15dbdb;
+}
+.heading li:nth-child(-2n+3)::after {
+    position: absolute;
+    content: "New";
+    font-size: 10px;
+    color: #ff0000;
+}
+
+.heading ol li a:visited {
+    color: #000;
+    text-decoration: underline;
+}
+
+.heading ol li a {
+    color: #000;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #9fd8fb;
+    float: right;
+}
+
+.submit-btn:hover {
+    background-color: #9fd8fb !important;
+    color: #fff;
+    border: 1px solid #9fd8fb;
+    transition: 3s;
+    float: right;
+}
