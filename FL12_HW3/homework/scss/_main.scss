@@ -1,0 +1,214 @@
+// Write your styles here
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
+}
+
+header {
+  background: url("../img/m-h-day.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom-right-radius: 41%;
+  padding-left: 1vw;
+
+  .header_heading::after {
+    content: '';
+    width: 15.9vw;
+    height: 5.1vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #14a0c7;
+    z-index: -1;
+
+  }
+
+  .header_heading {
+    position: relative;
+    font-size: 3.7vw;
+    font-weight: bold;
+    margin: 3.6vw 0 0 0;
+    color: #2c2f3c;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 25vw;
+    line-height: 3.9vw;
+    z-index: 1;
+  }
+
+  .header-wrap {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+    align-items: flex-start;
+    width: 81vw;
+    height: 68vh;
+    padding: 1vw;
+  }
+
+  .landing-logo {
+    display: flex;
+    width: 9vw;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-basis: unset; */
+    height: 2.4vw;
+
+    img {
+      float: left;
+    }
+
+    p {
+      float: left;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 0.3vw 0px 0px .7vw;
+      line-height: 1vw;
+
+      span {
+        display: block;
+        font-size: 0.63rem;
+        margin: 0 0 0 .5vw;
+      }
+    }
+  }
+
+  .header_text {
+    color: #2c2f3c;
+    margin-top: 3.6vh;
+    width: 40vw;
+    font-weight: 600;
+    line-height: 1.34vw;
+    margin-bottom: 3vw;
+    white-space: pre-line;
+  }
+
+  button {
+    width: 7.5vw;
+    height: 5vh;
+    color: white;
+    font-weight: 900;
+    font-size: .8vw;
+    line-height: 1vw;
+    background: #699900;
+    border-radius: 3px;
+    border-style: solid;
+    border: 0px;
+  }
+
+  a {
+    margin-left: 7.7vw;
+    font-weight: 900;
+    font-size: .96vw;
+    color: white;
+  }
+}
+
+main {
+    .section_text::after {
+      content: '';
+      width: 15.9vw;
+      height: 5.1vh;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #14a0c7;
+      z-index: -1;
+    }
+
+    .section_text {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      font-size: 2vw;
+      font-weight: 900;
+      line-height: 5vh;
+      word-spacing: .05vw;
+    }
+
+    .section_card {
+      display: flex;
+      justify-content: space-between;
+      width: 56vw;
+      background: red;
+      padding: 1vw;
+      margin-left: 1vw;
+      align-items: center;
+    }
+  .section_card_img {
+    width: 22vw;
+    height: 28vh;
+  }
+
+  .section_card_right_container {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section_card_heading {
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-right: 4vw;
+  }
+
+  .section_card_text {
+    line-height: 1.5vw;
+    text-align: justify;
+    width: 24vw;
+    /* margin-left: 1vw; */
+    margin-right: 4vw;
+  }
+}
+footer{
+  display: grid;
+  text-align: center;
+  height: 170px;
+  .footer-wrap{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    .footer_logo{
+      display: inline-grid;
+      img{
+        margin-top: 10px;
+        opacity: 0.8;
+      }
+      p{
+        width: max-content;
+        display: inline-grid;
+        padding-left: 10px;
+        grid-column: 2;
+
+        opacity: 0.8;
+        span{
+
+          opacity: 0.8;
+        }
+      }
+    }
+    .footer_text{
+      width: 200px;
+      grid-column: 2;
+      display: inline-grid;
+      text-align: left;
+      margin-bottom: 0;
+      margin-left: 60px;
+      opacity: 0.8;
+    }
+    .footer-cr{
+      grid-column: 3;
+      opacity: 0.8;
+    }
+  }
+
+}
