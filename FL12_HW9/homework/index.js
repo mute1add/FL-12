@@ -16,7 +16,7 @@ function convert (){
     return newArray;
 }
 
-// console.log(convert('1', 2, 3, '4'));
+console.log(convert('1', 2, 3, '4'));
 
 // task 2
 //2. Write function, which iterates over array and executes function on each element.
@@ -26,7 +26,7 @@ function execforEach (arr, func){
     let resp = arr.forEach(func);
     return resp;
 }
-// console.log(execforEach([1,2,3], function(el) {console.log(el * 2)}));
+console.log(execforEach([1,2,3], function(el) {console.log(el * 2)}));
 
 //task 3
 //3. Write function, which returns transformed array based on function, which passed as a second parameter (callback). If array contains a number as string, it should convert it and return as number. You’re allowed to change a body of that callback function if you need. Reuse function from task 2.
@@ -39,7 +39,7 @@ function mapArray(arr, func) {
     }
     return newArray;
 }
-// console.log(mapArray([2, '5', 8], function(el) {return el + 3}));
+console.log(mapArray([2, '5', 8], function(el) {return el + 3}));
 
 //task 4
 //4. Write function, which returns filtered array based on function, which passed as a parameter. Reuse function from task 2.
@@ -56,7 +56,7 @@ function filtersArray (arr, func) {
     }
     return newArray;
 }
-// console.log(filtersArray([2, 5, 8], function(el) { return el % 2 === 0 }) );
+console.log(filtersArray([2, 5, 8], function(el) { return el % 2 === 0 }) );
 
 //task 5
 //5. Write a function that reverses the string value passed into it.
@@ -67,7 +67,7 @@ function flipsOver(str) {
     let arrReverse = array.reverse();
     return arrReverse.join('');
 }
-// console.log(flipsOver('hey world'));
+console.log(flipsOver('hey world'));
 
 //task 6
 //6. Write a function which creates an array from the given range of numbers
@@ -80,7 +80,7 @@ function createListFromRange(arr) {
     let newArray = Array.from({ length }, (_, i) => start + i);
     return newArray;
 }
-// console.log(createListFromRange([2, 7]));
+console.log(createListFromRange([2, 7]));
 
 //task 7
 //7. Write a function that accepts an array of object and returns new array of values by passed key name.
@@ -103,7 +103,7 @@ function getArrayOfKey (arr, key) {
     }
     return newArr;
 }
-// console.log(getArrayOfKey(actors, 'name'));
+console.log(getArrayOfKey(actors, 'name'));
 
 //task8
 //8. Write function substitute() that accepts an array of numbers and manages to replace all numbers lower than 30 with '*'. It should return a new array with numbers and '*' instead of numbers lowest from 30. Reuse function from task 3.
@@ -121,7 +121,7 @@ function subs(arr) {
     }
     console.log(newArray);
 }
-// subs([58, 14, 48, 2, 31, 29]);
+subs([58, 14, 48, 2, 31, 29]);
 
 // task 9
 //9. Write a function which returns a day number that was some amount of days ago from the passed date.
@@ -141,11 +141,11 @@ function getPastDay(date, days) {
     let newDate = msUTC-daysUTC;
     return new Date(newDate);
 }
-//console.log(getPastDay(date, 1));
+console.log(getPastDay(date, 1));
 
 //task #10
 function formatDate(date){
     return date.toISOString();
 
 }
-// console.log(formatDate(new Date()));
+console.log(formatDate(new Date()));
