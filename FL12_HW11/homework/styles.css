@@ -1,0 +1,33 @@
+span {
+    font-size: 20px;
+}
+
+.folder_image {
+    color: #EDBC0B;
+}
+.file_image {
+    color: #BBBBBB;
+}
+
+.item {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+.item:hover {
+    background-color: #EFEFEF;
+}
+
+.folder_items {
+    margin-left: 15px;
+}
+
+.hide {
+    display: none;
+}
+.italic {
+    font-style: italic;
+}
