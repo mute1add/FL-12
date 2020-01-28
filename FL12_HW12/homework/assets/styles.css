@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+}
+.addItemButton {
+  width: 160px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#list {
+  margin-top: 50px;
+}
+.item {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+}
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.item p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  margin: 0;
+}
+.done p {
+  background-color: gray;
+}
+.itemCheckedIco {
+  height: 36px;
+  width: 36px;
+  background: url("./img/todo-s.png") no-repeat;
+}
+.itemUncheckedIco {
+  height: 36px;
+  width: 36px;
+  background: url("./img/done-s.png") no-repeat;
+}
+.itemDescription {
+  width: 200px;
+}
+.deleteItemIco {
+  height: 36px;
+  width: 36px;
+  background: url("./img/remove-s.jpg") no-repeat;
+}
+.emptyListMessage {
+  font-size: 25px;
+}
+.input {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.buttonsWrapper {
+  margin: 0 auto;
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+}
+.buttonsWrapper button {
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
